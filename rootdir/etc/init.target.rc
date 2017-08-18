@@ -370,6 +370,13 @@ service citsensor-hal-1-1  /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservic
     user system
     group system input wakelock
 
+
+service power_off_alarm /vendor/bin/power_off_alarm
+    class core
+    group system
+    disabled
+    oneshot
+
 service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
     user root
