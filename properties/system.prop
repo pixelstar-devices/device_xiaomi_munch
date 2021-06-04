@@ -27,7 +27,7 @@ dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.systemuicompilerfilter=speed
 
 # DPM
-persist.vendor.dpm.feature=1
+persist.vendor.dpm.feature=11
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
