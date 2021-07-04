@@ -67,4 +67,9 @@
     <string name="touch_sensitivity_summary">Controls touch sensitivity for repeated taps</string>
     <string name="touch_resistant_title">Resistant area</string>
     <string name="touch_resistant_summary">Reduce touch sensitivity near the edges to avoid triggering touch controls</string>
+
+    <!-- High Touch Polling -->
+    <string name="htsr_title">Touch Responsiveness</string>
+    <string name="htsr_enable_title">Increase Touch Responsiveness</string>
+    <string name="htsr_enable_summary">Increases touch polling rate to decrease latency</string>    
 </resources>
