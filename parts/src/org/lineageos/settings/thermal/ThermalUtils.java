@@ -41,22 +41,30 @@ public final class ThermalUtils {
     protected static final int STATE_CAMERA = 3;
     protected static final int STATE_DIALER = 4;
     protected static final int STATE_GAMING = 5;
-    protected static final int STATE_STREAMING = 6;
+    protected static final int STATE_NAVIGATION = 6;
+    protected static final int STATE_STREAMING = 7;
+    protected static final int STATE_VIDEO = 8;
     private static final String THERMAL_CONTROL = "thermal_control";
+
     private static final String THERMAL_STATE_DEFAULT = "0";
     private static final String THERMAL_STATE_BENCHMARK = "10";
     private static final String THERMAL_STATE_BROWSER = "11";
     private static final String THERMAL_STATE_CAMERA = "12";
     private static final String THERMAL_STATE_DIALER = "8";
+
     private static final String THERMAL_STATE_GAMING = "9";
+    private static final String THERMAL_STATE_NAVIGATION = "19";
     private static final String THERMAL_STATE_STREAMING = "14";
+    private static final String THERMAL_STATE_VIDEO = "21";
 
     private static final String THERMAL_BENCHMARK = "thermal.benchmark=";
     private static final String THERMAL_BROWSER = "thermal.browser=";
     private static final String THERMAL_CAMERA = "thermal.camera=";
     private static final String THERMAL_DIALER = "thermal.dialer=";
     private static final String THERMAL_GAMING = "thermal.gaming=";
+    private static final String THERMAL_NAVIGATION = "thermal.navigation=";
     private static final String THERMAL_STREAMING = "thermal.streaming=";
+    private static final String THERMAL_VIDEO = "thermal.video=";
 
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
 
@@ -98,12 +106,12 @@ public final class ThermalUtils {
 
         if (value != null) {
              String[] modes = value.split(":");
-             if (modes.length < 5) value = null;
+             if (modes.length < 8) value = null;
          }
 
         if (value == null || value.isEmpty()) {
-            value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" +
-                    THERMAL_DIALER + ":" + THERMAL_GAMING + ":" + THERMAL_STREAMING;
+            value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" + THERMAL_DIALER + ":" +
+                    THERMAL_GAMING + ":" + THERMAL_NAVIGATION + ":" + THERMAL_STREAMING + ":" + THERMAL_VIDEO;
             writeValue(value);
         }
         return value;
@@ -131,13 +139,19 @@ public final class ThermalUtils {
             case STATE_GAMING:
                 modes[4] = modes[4] + packageName + ",";
                 break;
-            case STATE_STREAMING:
+            case STATE_NAVIGATION:
                 modes[5] = modes[5] + packageName + ",";
+                break;
+            case STATE_STREAMING:
+                modes[6] = modes[6] + packageName + ",";
+                break;
+            case STATE_VIDEO:
+                modes[7] = modes[7] + packageName + ",";
                 break;
         }
 
         finalString = modes[0] + ":" + modes[1] + ":" + modes[2] + ":" + modes[3] + ":" +
-                modes[4] + ":" + modes[5];
+                modes[4] + ":" + modes[5] + ":" + modes[6] + ":" + modes[7];
 
         writeValue(finalString);
     }
@@ -157,7 +171,11 @@ public final class ThermalUtils {
         } else if (modes[4].contains(packageName + ",")) {
             state = STATE_GAMING;
         } else if (modes[5].contains(packageName + ",")) {
+            state = STATE_NAVIGATION;
+        } else if (modes[6].contains(packageName + ",")) {
             state = STATE_STREAMING;
+        } else if (modes[7].contains(packageName + ",")) {
+            state = STATE_VIDEO;
         }
 
         return state;
@@ -186,7 +204,11 @@ public final class ThermalUtils {
             } else if (modes[4].contains(packageName + ",")) {
                 state = THERMAL_STATE_GAMING;
             } else if (modes[5].contains(packageName + ",")) {
+                state = THERMAL_STATE_NAVIGATION;
+            } else if (modes[6].contains(packageName + ",")) {
                 state = THERMAL_STATE_STREAMING;
+            } else if (modes[7].contains(packageName + ",")) {
+                state = THERMAL_STATE_VIDEO;
             }
         }
         FileUtils.writeLine(THERMAL_SCONFIG, state);
@@ -217,9 +239,15 @@ public final class ThermalUtils {
             case STATE_GAMING:
                 state = THERMAL_STATE_GAMING;
                 break;
+            case STATE_NAVIGATION:
+            	state = THERMAL_STATE_NAVIGATION;
+            	break;
             case STATE_STREAMING:
                 state = THERMAL_STATE_STREAMING;
                 break;
+			case STATE_VIDEO:
+				state = THERMAL_STATE_VIDEO;
+				break;
         }
 
         FileUtils.writeLine(THERMAL_SCONFIG, state);
