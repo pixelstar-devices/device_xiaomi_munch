@@ -6,6 +6,14 @@
   *;
 }
 
+-keep class org.lineageos.settings.speaker.* {
+  *;
+}
+
+-keep class org.lineageos.settings.refreshrate.* {
+  *;
+}
+
 -keep class org.lineageos.settings.thermal.* {
   *;
 }
