@@ -55,6 +55,9 @@ persist.log.tag.CVP=S
 persist.log.tag.ResourcesCompat=S
 persist.log.tag.SYNX-UMD=S
 
+# LMK
+ro.config.low_ram=false
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
