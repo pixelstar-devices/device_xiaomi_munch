@@ -26,3 +26,6 @@ allow system_app vendor_audio_data_file:file {read write create getattr append o
 
 # Allow Parts write thermals
 allow system_app sysfs_thermal:file rw_file_perms;
+
+allow system_app vendor_sysfs_battery_supply:dir search;
+allow system_app vendor_sysfs_battery_supply:file r_file_perms;
