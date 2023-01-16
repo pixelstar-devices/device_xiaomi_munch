@@ -106,6 +106,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-l
 TARGET_KERNEL_CONFIG := munch_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/munch
 
+# Kernel Supported Features
+BOARD_RAMDISK_USE_LZ4 := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
