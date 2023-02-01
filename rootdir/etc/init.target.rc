@@ -142,7 +142,13 @@ on property:ro.boot.dp=0x0
     write /sys/bus/platform/devices/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/pshold_reboot 7
 
 on boot
-	    chown system system /sys/class/touch/touch_dev/palm_sensor
+    # Allow system to manipulate KProfiles modes and parameters
+    chown system system /sys/module/kprofiles/parameters/auto_kp
+    chmod 0660 /sys/module/kprofiles/parameters/auto_kp
+    chown system system /sys/kernel/kprofiles/kp_mode
+    chmod 0660 /sys/kernel/kprofiles/kp_mode
+
+	chown system system /sys/class/touch/touch_dev/palm_sensor
     chown system system /sys/class/touch/touch_dev/partial_diff_data
 
     # Set xiaomi touch permissions
