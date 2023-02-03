@@ -19,5 +19,3 @@ r_dir_file(system_app, vendor_sysfs_battery_supply)
 allow system_app vendor_audio_data_file:dir {write add_name search};
 allow system_app vendor_audio_data_file:file {read write create getattr append open};
 
-# Allow KProfiles to be adjusted by a system app
-allow system_app sysfs_kprofiles:file rw_file_perms;
