@@ -36,3 +36,4 @@ get_prop(devicesettings_app, settingslib_prop)
 # ro.input.resampling
 # viewroot.profile_rendering
 dontaudit devicesettings_app default_prop:file read;
+
