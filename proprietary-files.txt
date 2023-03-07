@@ -1855,16 +1855,16 @@ vendor/firmware/vehicle_moto_RTP.bin
 vendor/firmware/vehicle_plane_RTP.bin
 
 # Vibrator (Xiaomi)
-lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so
-lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
 vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
+vendor/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 
 # Vibrator (Haptics)
 vendor/lib64/libaachaptics.so
+vendor/lib64/vendor.awa.wavelib.so
 
 # VPP
 vendor/bin/vppservice

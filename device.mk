@@ -576,9 +576,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator Xiaomi
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk.vendor \
-    android.hardware.vibrator-V1-ndk_platform.vendor
-
+    android.hardware.vibrator-V1-ndk.vendor
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
