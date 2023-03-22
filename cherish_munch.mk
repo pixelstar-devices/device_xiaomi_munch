@@ -17,8 +17,6 @@ $(call inherit-product, device/xiaomi/munch/device.mk)
 PRODUCT_NAME := cherish_munch
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO F4
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -36,4 +34,3 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-BUILD_FINGERPRINT := Redmi/munch/munch:12/RKQ1.211001.001/V13.0.5.0.SLMMIXM:user/release-keys
