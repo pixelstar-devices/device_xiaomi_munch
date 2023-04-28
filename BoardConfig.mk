@@ -84,6 +84,11 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += nfc
 ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml
 
+ifeq ($(TARGET_USES_MIUI_DOLBY),true)
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+     $(DEVICE_PATH)/configs/dolby/manifests/dolby_framework_matrix.xml
+endif
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_munch
 TARGET_RECOVERY_DEVICE_MODULES := libinit_munch
