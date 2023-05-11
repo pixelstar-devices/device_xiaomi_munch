@@ -114,7 +114,8 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" \
     TARGET_PRODUCT=$(PRODUCT_DEVICE)
 TARGET_KERNEL_CONFIG := munch_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/munch
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+TARGET_KERNEL_CLANG_VERSION := r487747
 
 # Kernel Supported Features
 BOARD_RAMDISK_USE_LZ4 := true
