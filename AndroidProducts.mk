@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_munch.mk
+    $(LOCAL_DIR)/aosp_munch.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_munch-user \
-    banana_munch-userdebug \
-    banana_munch-eng
+    aosp_munch-user \
+    aosp_munch-userdebug \
+    aosp_munch-eng
