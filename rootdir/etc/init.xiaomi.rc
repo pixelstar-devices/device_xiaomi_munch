@@ -71,6 +71,10 @@ on boot && property:ro.boot.product.hardware.sku=nfc
     enable qti_esepowermanager_service_1_1
     enable secureelement-hal_1_2
     enable vendor.nfc_hal_service
+    
+    # Fast Charge
+    chown system system /sys/class/qcom-battery/restrict_chg
+    chmod 0666 /sys/class/qcom-battery/restrict_chg
 
 # NVMAC
 on property:init.svc.vendor.nv_mac=stopped
