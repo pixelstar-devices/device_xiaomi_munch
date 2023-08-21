@@ -152,6 +152,7 @@ on boot
     chmod 0660 /sys/module/kprofiles/parameters/kp_mode
     
     chown system system /sys/class/touch/touch_dev/palm_sensor
+    chmod 0664 /sys/class/touch/touch_dev/palm_sensor
     chown system system /sys/class/touch/touch_dev/partial_diff_data
     
     # Set xiaomi touch permissions
