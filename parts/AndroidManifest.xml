@@ -28,6 +28,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true"
         android:label="@string/device_settings_app_name"
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase"
@@ -41,7 +42,7 @@
             </intent-filter>
         </receiver>
 
-        <activity
+        <!--activity
             android:name=".dirac.DiracActivity"
             android:label="@string/dirac_title"
             android:exported="true"
@@ -53,8 +54,20 @@
                        android:value="com.android.settings.category.ia.sound" />
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/dirac_summary" />
+        </activity-->
+        <activity
+            android:name=".dolby.DolbyActivity"
+            android:label="@string/dolby_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.sound" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/dolby_summary" />
         </activity>
-
         <service
             android:name=".thermal.ThermalService"
             android:exported="true"
@@ -73,7 +86,7 @@
             </intent-filter>
         </service>
 
-        <service
+        <!--service
             android:name=".dirac.DiracTileService"
             android:exported="true"
             android:icon="@drawable/ic_headphone"
@@ -84,8 +97,17 @@
             </intent-filter>
             <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE"
             android:value="true" />
+        </service-->
+        <service
+            android:name=".dolby.DolbyTileService"
+            android:icon="@drawable/ic_dolby_qs"
+            android:label="@string/dolby_title"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
         </service>
-
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
@@ -104,7 +126,7 @@
                 android:name="com.android.settings.order"
                 android:value="1" />
         </activity>
-        
+
         <activity
             android:name=".hbm.HBMActivity"
             android:label="@string/hbm_fragment_title"
@@ -121,7 +143,7 @@
                 android:resource="@string/hbm_fragment_summary" />
         </activity>
 
-        <activity 
+        <activity
             android:name=".hbm.HBMFragment" />
 
         <service
