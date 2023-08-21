@@ -1,0 +1,45 @@
+ [
+    {
+    	"remote":       "gitlab",
+    	"repository":   "Mudit200408/decommon-vendor-xiaomi-munch",
+    	"target_path":  "vendor/xiaomi/munch"
+    	"branch": "tiramisu"
+    }
+    {
+    	"remote":       "github",
+    	"repository":   "Mudit200408/device_xiaomi_munch-miuicamera",
+    	"target_path":  "device/xiaomi/munch-miuicamera"
+    	"branch":       "arrow-13.0"
+    }
+    {
+    	"remote":       "gitlab",
+    	"repository":   "Mudit200408/vendor_xiaomi_munch-miuicamera",
+    	"target_path":  "vendor_xiaomi_munch-miuicamera"
+    	"branch":       "t"
+    }
+    {
+        "repository": "nexus_kernel_xiaomi_sm8250",
+        "target_path": "kernel/xiaomi/sm8250",
+        "branch": "stable",
+        "remote": "github"
+    },
+    {
+		"repository": "NotZeetaa/aosp-clang-17.0.0",
+        "target_path": "prebuilts/clang/host/linux-x86/clang-r487747",
+        "branch":"master",
+        "remote":"gitlab"
+    },
+    {
+        "repository": "LineageOS/android_hardware_xiaomi",
+        "target_path": "hardware/xiaomi",
+        "branch": "lineage-20",
+        "remote": "github"
+    },
+    {
+        "repository": "CannedShroud/android_packages_apps_KProfiles",
+        "target_path": "packages/apps/KProfiles ",
+        "branch": "main",
+        "remote": "github"
+    },
+
+]
