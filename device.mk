@@ -241,6 +241,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.sf.skip_set_active_mode_when_off=1
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.surface_flinger.set_display_power_timer_ms=3000 \
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
