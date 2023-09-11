@@ -25,6 +25,9 @@ TARGET_SUPPORTS_QUICK_TAP  := true
 #Skip Aperture Camera
 PRODUCT_NO_CAMERA := true
 
+#Pixel Launcher Extended
+PIXEL_LAUNCHER_VARIANT := glance13
+
 # PixelStar Maintainer Flags
 PIXELSTAR_MAINTAINER := Mudit
 CUSTOM_BUILD_TYPE := OFFICIAL
