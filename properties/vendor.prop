@@ -254,7 +254,10 @@ persist.sys.oem.otg_support=true
 vendor.power.pasr.enabled=false
 
 # Perf
+ro.vendor.perf-hal.ver=2.2
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.power.pasr.enabled
+ro.vendor.qspm.enable=true
 
 # Radio
 persist.radio.NO_STAPA=1
