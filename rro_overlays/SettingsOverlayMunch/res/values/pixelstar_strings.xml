@@ -15,4 +15,6 @@
 
      <string name="pixelstar_maintainer">Mudit</string>
 
+    <!-- Whether to enable Lineage Fast Charge Prefernece -->
+    <bool name="config_lineageFastChargeSupported">true</bool>
 </resources>
