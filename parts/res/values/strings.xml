@@ -140,4 +140,6 @@
     <string name="dolby_off">Off</string>
     <string name="dolby_on">On</string>
     <string name="dolby_on_with_profile">On (%1$s)</string>
+    <string name="dolby_description">"Troubleshoot: If you don&apos;t notice any difference with profiles then just disable and re-enable dolby".
+</string>
 </resources>

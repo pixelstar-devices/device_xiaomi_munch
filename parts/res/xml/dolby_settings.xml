@@ -41,4 +41,8 @@
         android:summary="%s"
         android:icon="@drawable/ic_dirac_preset"/>
 
+    <com.android.settingslib.widget.FooterPreference
+        android:key="footer_preference"
+        android:title="@string/dolby_description"
+        android:selectable="false" />
 </PreferenceScreen>
