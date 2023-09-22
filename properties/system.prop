@@ -79,10 +79,10 @@ ro.vendor.qti.core_ctl_min_cpu=2
 # Radio
 persist.vendor.radio.report_codec=1
 
-# SkiaGL Threaded
+# Graphics
+debug.hwui.renderer=opengl
+renderthread.skia.reduceopstasksplitting=true
 debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiagl
-renderthread.skia.reduceopstasksplitting=true 
 
 # Radio VoNR Calling
 persist.radio.is_vonr_enabled_0=true
