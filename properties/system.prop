@@ -7,9 +7,6 @@ camera.disable_zsl_mode=true
 persist.vendor.camera.expose.aux=1
 log.tag.CHIUSECASE=ERROR
 
-# Charger
-ro.charger.disable_init_blank=true
-
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
