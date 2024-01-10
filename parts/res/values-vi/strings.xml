@@ -15,6 +15,19 @@
      limitations under the License.
 -->
 <resources>
+     <!-- Cài đặt HBM -->
+     <string name="hbm_fragment_title">Chế độ Sáng Cao</string>
+     <string name="hbm_fragment_summary">Cài đặt cho HBM</string>
+     <string name="hbm_mode_title">HBM</string>
+     <string name="hbm_mode_summary">Kích hoạt độ sáng tối đa</string>
+     <string name="auto_hbm_title">HBM Tự Động</string>
+     <string name="auto_hbm_summary">Kích hoạt độ sáng tối đa dựa vào ánh sáng mặt trời</string>
+     <string name="auto_hbm_threshold_title"></string>
+     <string name="auto_hbm_threshold_summary">ngưỡng (lux)</string>
+     <string name="hbm_disable_time_title"></string>
+     <string name="hbm_disable_time_summary">thời gian tắt (giây)</string>
+     <string name="hbm_mode_warning">Sử dụng Chế độ Sáng Cao trong thời gian dài có thể làm hỏng màn hình của bạn</string>
+
     <!-- Thermal Profiles -->
     <string name="thermal_title">Cấu hình Thermal</string>
     <string name="thermal_summary">Điều chỉnh cấu hình nhiệt độ riêng cho từng ứng dụng để đạt hiệu suất tối ưu</string>
