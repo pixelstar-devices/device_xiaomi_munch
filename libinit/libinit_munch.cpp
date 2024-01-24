@@ -9,7 +9,7 @@
 
 #include "vendor_init.h"
 
-#define FINGERPRINT_GL "POCO/munch_global/munch:13/RKQ1.211001.001/V14.0.4.0.TLMMIXM:user/release-keys"
+#define FINGERPRINT_GL "POCO/munch_global/munch:13/RKQ1.211001.001/V14.0.5.0.TLMMIXM:user/release-keys"
 #define FINGERPRINT_CN "Redmi/munch/munch:13/RKQ1.211001.001/V14.0.7.0.TLMCNXM:user/release-keys"
 #define FINGERPRINT_IN "POCO/munch_in/munch:13/RKQ1.211001.001/V14.0.5.0.TLMINXM:user/release-keys"
 
