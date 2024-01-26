@@ -16,9 +16,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/miuicamera.mk)
 
-#Viper
-$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
-
 #Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
