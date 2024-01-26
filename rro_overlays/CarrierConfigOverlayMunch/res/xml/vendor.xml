@@ -5999,6 +5999,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="405" mnc="51,52,53,54,55,56">
         <boolean name="carrier_disable_5g_switch_bool" value="false"/>
     </carrier_config>
+    <carrier_config mcc="410" mnc="01,02,03,04,05,06,07">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="413" mnc="5">
         <boolean name="carrier_volte_available_bool" value="true"/>
     </carrier_config>
