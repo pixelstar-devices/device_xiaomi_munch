@@ -20,6 +20,11 @@ android_app {
         "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature-V1.0-java",
     ],
 
+	optional_uses_libs: [
+		"androidx.window.extensions",
+		"androidx.window.sidecar",
+	], 
+  
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
