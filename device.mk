@@ -19,6 +19,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/miuicamera.mk)
 #Viper
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
+#Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
