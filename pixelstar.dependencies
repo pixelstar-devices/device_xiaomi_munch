@@ -12,12 +12,6 @@
         "branch": "14"
     },
     {
-    	"remote": "github",
-        "repository": "projects-nexus/nexus_kernel_xiaomi_sm8250",
-        "target_path": "kernel/xiaomi/sm8250",
-        "branch": "sched-5"
-    },
-    {
         "remote": "github",
         "repository": "LineageOS/android_hardware_xiaomi",
         "target_path": "hardware/xiaomi",
@@ -25,8 +19,8 @@
     },
     {
         "remote": "github",
-        "repository": "CannedShroud/android_packages_apps_KProfiles",
-        "target_path": "packages/apps/KProfiles",
-        "branch": "main"
-    }
+        "repository": "Mudit200408/hardware_dolby",
+        "target_path": "hardware/dolby",
+        "branch": "14"
+    },
 ]
