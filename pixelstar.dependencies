@@ -6,16 +6,10 @@
         "branch": "14"
     },
     {
-        "remote": "gitlab",
-        "repository": "hdzungx/android_vendor_xiaomi_miuicamera",
+        "remote": "bitbucket",
+        "repository": "hdzungx291/android_vendor_xiaomi_miuicamera",
         "target_path": "vendor/xiaomi/miuicamera",
         "branch": "14"
-    },
-    {
-    	"remote": "github",
-        "repository": "projects-nexus/nexus_kernel_xiaomi_sm8250",
-        "target_path": "kernel/xiaomi/sm8250",
-        "branch": "sched-5"
     },
     {
         "remote": "github",
@@ -25,8 +19,14 @@
     },
     {
         "remote": "github",
-        "repository": "CannedShroud/android_packages_apps_KProfiles",
-        "target_path": "packages/apps/KProfiles",
-        "branch": "main"
+        "repository": "Mudit200408/android_hardware_dolby",
+        "target_path": "hardware/dolby",
+        "branch": "pixelstar"
+    },
+    {
+    	"remote": "github",
+        "repository": "projects-nexus/nexus_kernel_xiaomi_sm8250",
+        "target_path": "kernel/xiaomi/sm8250",
+        "branch": "rebase-3"
     }
 ]
