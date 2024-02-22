@@ -30,12 +30,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreference;
 import android.app.ActionBar;
 import android.app.Activity;
 
-public class PocketPreferenceFragment extends PreferenceFragment
+public class PocketPreferenceFragment extends PreferenceFragmentCompat
         implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "PocketMode";
 

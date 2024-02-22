@@ -27,14 +27,14 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.TwoStatePreference;
 
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.R;
 
-public class HBMFragment extends PreferenceFragment
+public class HBMFragment extends PreferenceFragmentCompat
         implements Preference.OnPreferenceChangeListener {
     private static final String TAG = HBMFragment.class.getSimpleName();
 

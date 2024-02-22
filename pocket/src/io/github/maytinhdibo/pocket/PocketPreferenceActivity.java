@@ -23,7 +23,7 @@
  */
 package io.github.maytinhdibo.pocket;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.R;
@@ -35,11 +35,11 @@ public class PocketPreferenceActivity extends CollapsingToolbarBaseActivity {
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Fragment fragment = getFragmentManager().findFragmentById(R.id.content_frame);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.content_frame);
         PocketPreferenceFragment pocketPreferenceFragment;
         if (fragment == null) {
             pocketPreferenceFragment = new PocketPreferenceFragment();
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(R.id.content_frame, pocketPreferenceFragment)
                     .commit();
         }

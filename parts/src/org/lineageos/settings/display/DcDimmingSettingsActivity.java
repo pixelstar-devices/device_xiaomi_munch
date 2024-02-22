@@ -21,6 +21,8 @@ import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.R;
+import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceFragmentCompat;
 
 public class DcDimmingSettingsActivity extends CollapsingToolbarBaseActivity  {
 
@@ -29,7 +31,7 @@ public class DcDimmingSettingsActivity extends CollapsingToolbarBaseActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new DcDimmingSettingsFragment(), TAG_DCDIMMING).commit();
     }
 }
