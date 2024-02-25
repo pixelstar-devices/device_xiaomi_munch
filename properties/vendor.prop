@@ -289,6 +289,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
+# TouchFeature
+ro.vendor.touchfeature.type=59
+
 # Radio
 persist.radio.NO_STAPA=1
 persist.radio.VT_HYBRID_ENABLE=1
