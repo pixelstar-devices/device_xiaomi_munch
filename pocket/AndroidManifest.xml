@@ -56,14 +56,14 @@
             android:authorities="${applicationId}.androidx-startup"
             tools:replace="android:authorities"/>
 
-        <receiver android:name=".receiver.BootCompletedReceiver">
+        <receiver android:name=".receiver.BootCompletedReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".receiver.PhoneStateReceiver">
+        <receiver android:name=".receiver.PhoneStateReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -72,12 +72,14 @@
 
         <service
             android:name=".PocketService"
-            android:permission="PocketService"></service>
+            android:permission="PocketService"
+            android:exported="false"></service>
 
         <!-- use theme as setting remove android:theme if not need it -->
         <activity
             android:name=".PocketPreferenceActivity"
             android:label="@string/pocketmode_short_title"
+            android:exported="false"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
