@@ -27,6 +27,6 @@
     	"remote": "github",
         "repository": "projects-nexus/nexus_kernel_xiaomi_sm8250",
         "target_path": "kernel/xiaomi/sm8250",
-        "branch": "rebase-3"
+        "branch": "rebase-7"
     }
 ]
