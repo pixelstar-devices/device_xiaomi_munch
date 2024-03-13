@@ -135,7 +135,7 @@
         <activity
             android:name=".hbm.HBMActivity"
             android:label="@string/hbm_fragment_title"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
