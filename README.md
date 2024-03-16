@@ -1,8 +1,10 @@
 Device configuration for Xiaomi Redmi K40S/POCO F4
 ==================================================
 
-# Clone
+## Clone ##
+```bash
 git clone https://github.com/Mudit200408/android_hardware_dolby hardware/dolby
+```
 
 The Xiaomi Redmi K40S/POCO F4 (codenamed _"munch"_) is a high-tier mid-range smartphone from Xiaomi.
 
