@@ -25,8 +25,8 @@
     },
     {
     	"remote": "github",
-        "repository": "projects-nexus/nexus_kernel_xiaomi_sm8250",
+        "repository": "Mudit200408/android_kernel_xiaomi_sm8250",
         "target_path": "kernel/xiaomi/sm8250",
-        "branch": "rebase-7"
+        "branch": "14"
     }
 ]
